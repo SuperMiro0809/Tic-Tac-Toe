@@ -1,20 +1,23 @@
-<h1 *ngIf="!winner">Current Player: {{player}}</h1>
-<h1 *ngIf="winner" class="winner">Winner: {{winner}}</h1>
+<div class="main">
+    <h1 *ngIf="!winner" class="crr-layer">Current Player: {{player}}</h1>
+    <h1 *ngIf="winner" class="winner">Winner: {{winner}}!</h1>
 
-<div class="score-table">
-    <div class="x-score">
-        <span class="player">X</span> {{xScore}}
+    <div class="score-table">
+        <div class="x-score">
+            <span class="player">X</span> {{xScore}}
+        </div>
+        <div class="o-score">
+            <span class="player">O</span> {{oScore}}
+        </div>
     </div>
-    <div class="o-score">
-        <span class="player">O</span> {{oScore}}
+
+    <div class="game-board">
+        <app-square *ngFor="let value of game; let i = index" [value]="value" (click)="makeMove(i)"></app-square>
+    </div>
+
+    <div class="new-game">
+        <button (click)="newGame()" class="new-game-btn">New Game</button>
     </div>
 </div>
 
-<div class="game-board">
-    <app-square *ngFor="let value of game; let i = index" [value]="value" (click)="makeMove(i)"></app-square>
-</div>
-
-<div>
-    <button (click)="newGame()">Start New Game</button>
-</div>
 

@@ -1,8 +1,17 @@
+.main {
+    margin: 0 auto;
+    width: 400px;
+}
+
 .game-board {
     margin-top: 2%;
     display: grid;
     grid-template-rows: 100px 100px 100px;
     grid-template-columns: 100px 100px 100px;
+}
+
+.score-table {
+    margin-left: 6%;
 }
 
 .x-score,
@@ -22,6 +31,25 @@
     font-weight: 600;
 }
 
+.crr-layer {
+    color: #05e3a0;
+    margin-left: 6%;
+}
+
 .winner {
     color: #66cc00;
+    margin-left: 20%;
+}
+
+.new-game {
+    margin-top: 2%;
+    margin-left: 25%;
+}
+
+.new-game-btn {
+    color:#05e3a0;
+    border: none;
+    background-color: white;
+    font-size: 16px;
+    cursor: pointer;
 }

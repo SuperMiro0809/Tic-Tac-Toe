@@ -2,4 +2,11 @@
     width: 100px;
     height: 100px;
     font-size: 18px;
+    background-color: #d0d6d4;
+    border: 1px solid;
+    outline: none;
 }
+
+/* .btn:active {
+    border-style: outset;
+} */

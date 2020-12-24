@@ -36,12 +36,14 @@ export class BoardComponent implements OnInit {
         this.xIsNext = !this.xIsNext;
       }
 
-      this.winner = this.calculateWinner();
-      if(this.winner === 'X') {
-        this.xScore++;
-      }else if(this.winner === 'O') {
-        this.oScore++;
-      }
+      if(!this.winner) {
+        this.winner = this.calculateWinner();
+        if(this.winner === 'X') {
+          this.xScore++;
+        }else if(this.winner === 'O') {
+          this.oScore++;
+        }
+    }
   }
 
   calculateWinner() {
