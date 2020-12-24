@@ -1,6 +1,6 @@
 .main {
     margin: 0 auto;
-    width: 400px;
+    width: 300px;
 }
 
 .game-board {
@@ -33,17 +33,17 @@
 
 .crr-layer {
     color: #05e3a0;
-    margin-left: 6%;
+    text-align: center;
 }
 
 .winner {
     color: #66cc00;
-    margin-left: 20%;
+    text-align: center;
 }
 
 .new-game {
     margin-top: 2%;
-    margin-left: 26%;
+    text-align: center;
 }
 
 .new-game-btn {

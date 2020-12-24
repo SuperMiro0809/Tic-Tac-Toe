@@ -43,7 +43,7 @@ export class BoardComponent implements OnInit {
         }else if(this.winner === 'O') {
           this.oScore++;
         }
-    }
+      }
   }
 
   calculateWinner() {
