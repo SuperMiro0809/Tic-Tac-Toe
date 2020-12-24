@@ -44,6 +44,11 @@ export class BoardComponent implements OnInit {
           this.oScore++;
         }
       }
+
+      const gameBoard = this.game.filter(i => !i);
+      if(gameBoard.length === 0 && !this.winner) {
+        this.winner = 'Draw';
+      }
   }
 
   calculateWinner() {
