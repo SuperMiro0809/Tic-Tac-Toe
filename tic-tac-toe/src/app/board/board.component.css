@@ -43,7 +43,7 @@
 
 .new-game {
     margin-top: 2%;
-    margin-left: 25%;
+    margin-left: 26%;
 }
 
 .new-game-btn {
@@ -52,4 +52,5 @@
     background-color: white;
     font-size: 16px;
     cursor: pointer;
+    font-weight: 600;
 }
