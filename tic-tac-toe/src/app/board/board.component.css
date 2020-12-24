@@ -1,0 +1,27 @@
+.game-board {
+    margin-top: 2%;
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px;
+}
+
+.x-score,
+.o-score {
+    display: inline-block;
+    margin: 10px;
+    font-size: 20px;
+    border: 2px solid gray;
+    border-image: none;
+    -webkit-border-image: -webkit-gradient(linear, left top, left bottom, from(gray), to(#fff), color-stop(0.5, #fff), color-stop(0.5, #66cc00)) 10 30 30 21 repeat repeat;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.player {
+    margin-right: 60px;
+    font-weight: 600;
+}
+
+.winner {
+    color: #66cc00;
+}
